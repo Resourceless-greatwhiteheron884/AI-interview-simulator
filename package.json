@@ -1,0 +1,35 @@
+{
+  "name": "ai-interview-simulator",
+  "version": "1.0.0",
+  "description": "AI-powered interview simulator using Claude by Anthropic",
+  "main": "index.html",
+  "scripts": {
+    "start": "npx serve . -l 8080",
+    "dev": "npx live-server --port=8080 --open=index.html",
+    "lint": "npx eslint src/**/*.js",
+    "format": "npx prettier --write src/**/*.js index.html"
+  },
+  "keywords": [
+    "interview",
+    "ai",
+    "claude",
+    "anthropic",
+    "career",
+    "simulator",
+    "practice"
+  ],
+  "author": "Your Name",
+  "license": "MIT",
+  "devDependencies": {
+    "eslint": "^8.57.0",
+    "live-server": "^1.2.2",
+    "prettier": "^3.2.5",
+    "serve": "^14.2.3"
+  },
+  "browserslist": [
+    "last 2 Chrome versions",
+    "last 2 Firefox versions",
+    "last 2 Safari versions",
+    "last 2 Edge versions"
+  ]
+}
