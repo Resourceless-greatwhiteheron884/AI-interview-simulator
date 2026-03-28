@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>AI Interview Simulator</title>
+  <meta name="description" content="Practice technical, behavioral, and system design interviews with an AI interviewer powered by Claude." />
+  <link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🎯</text></svg>" />
+  <link rel="stylesheet" href="src/styles.css" />
+</head>
+<body>
+
+<div id="app">
+
+  <!-- ═══════════════════════════════════════════════════ HEADER -->
+  <header class="app-header">
+    <div class="logo">
+      <span>🎯</span>
+      InterviewAI
+      <span class="logo-dot">/ simulator</span>
+    </div>
+    <div class="header-actions">
+      <button class="btn btn-icon" id="history-btn" title="Session History">📋</button>
+      <button class="btn btn-ghost" id="restart-btn">← New Setup</button>
+    </div>
+  </header>
+
+  <!-- ═══════════════════════════════════════════════════ PHASE: SETUP -->
+  <main class="phase active" id="phase-setup">
+    <div class="setup-container">
+
+      <div class="setup-hero">
+        <h1>Ace your next<br /><em>technical interview</em></h1>
+        <p>Practice with an AI interviewer that adapts to your role, level, and target company — then get scored.</p>
+      </div>
+
+      <!-- API Key -->
+      <div class="setup-section">
+        <h2>01 — API Key</h2>
+        <div class="api-key-row">
+          <input
+            type="password"
+            id="api-key-input"
+            placeholder="sk-ant-api03-…"
+            autocomplete="off"
+            spellcheck="false"
+          />
+          <button class="btn btn-primary" id="save-key-btn">Validate</button>
+        </div>
+        <div class="key-status" id="api-key-status"></div>
+      </div>
+
+      <!-- Interview Config -->
+      <div class="setup-section">
+        <h2>02 — Interview Configuration</h2>
+        <div class="select-grid">
+
+          <div class="select-group">
+            <label for="role-select">Target Role</label>
+            <select id="role-select">
+              <option value="">— Select role —</option>
+              <option>Software Engineer</option>
+              <option>Frontend Engineer</option>
+              <option>Backend Engineer</option>
+              <option>Full Stack Engineer</option>
+              <option>Data Scientist</option>
+              <option>ML Engineer</option>
+              <option>DevOps Engineer</option>
+              <option>Product Manager</option>
+            </select>
+          </div>
+
+          <div class="select-group">
+            <label for="level-select">Experience Level</label>
+            <select id="level-select">
+              <option value="">— Select level —</option>
+              <option>Junior (0–2 yrs)</option>
+              <option>Mid-level (2–5 yrs)</option>
+              <option>Senior (5–8 yrs)</option>
+              <option>Staff / Principal</option>
+            </select>
+          </div>
+
+          <div class="select-group">
+            <label for="type-select">Interview Type</label>
+            <select id="type-select">
+              <option value="">— Select type —</option>
+              <option>Technical</option>
+              <option>Behavioral</option>
+              <option>System Design</option>
+              <option>HR / Culture</option>
+              <option>Mixed</option>
+            </select>
+          </div>
+
+          <div class="select-group">
+            <label for="company-select">Target Company (optional)</label>
+            <select id="company-select">
+              <option>Any Company</option>
+              <option>Google</option>
+              <option>Meta</option>
+              <option>Amazon</option>
+              <option>Apple</option>
+              <option>Microsoft</option>
+              <option>Netflix</option>
+              <option>Stripe</option>
+              <option>Airbnb</option>
+              <option>Uber</option>
+              <option>Spotify</option>
+              <option>Shopify</option>
+            </select>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="setup-footer">
+        <button class="btn btn-primary" id="start-btn">Start Interview →</button>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- ═══════════════════════════════════════════════════ PHASE: INTERVIEW -->
+  <div class="phase" id="phase-interview">
+
+    <div class="interview-header">
+      <div class="interview-title">
+        <strong>Live Interview Session</strong>
+        <span id="interview-subtitle">Configure above to begin</span>
+      </div>
+      <div class="interview-actions">
+        <button class="btn btn-ghost" id="feedback-btn">Request Feedback</button>
+      </div>
+    </div>
+
+    <div id="chat-messages"></div>
+
+    <div class="chat-input-area">
+      <div class="input-row">
+        <textarea
+          id="user-input"
+          placeholder="Type your answer… (Shift+Enter for newline)"
+          rows="1"
+          spellcheck="true"
+        ></textarea>
+        <button class="btn btn-primary" id="send-btn">Send</button>
+      </div>
+      <div class="input-hint">Type /feedback to request final assessment · Shift+Enter for newline</div>
+    </div>
+
+  </div>
+
+  <!-- ═══════════════════════════════════════════════════ HISTORY PANEL -->
+  <aside id="history-panel">
+    <div class="history-panel-header">
+      <h3>Session History</h3>
+      <button class="btn btn-icon" id="close-history-btn">✕</button>
+    </div>
+    <div id="history-list"></div>
+  </aside>
+
+</div>
+
+<script type="module">
+  // Inline module bootstrap to avoid server requirement for basic open
+  // When serving via HTTP, src/app.js imports work natively.
+  // For file:// protocol, we inline everything.
+
+  import { initApp } from "./src/app.js";
+  document.addEventListener("DOMContentLoaded", initApp);
+</script>
+
+</body>
+</html>
